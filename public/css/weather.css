@@ -1,0 +1,94 @@
+/* Search Headers */
+input {
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  border: 1px solid lightgray;
+  line-height: 1.6;
+}
+
+button,
+select {
+  padding: 0.5rem 0.5rem;
+  background-color: gray;
+  color: #f8f4f9;
+  border: 1px solid gray;
+  border-radius: 0.1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Information styling */
+#info-box {
+  padding: 0rem auto;
+  margin: 0rem auto;
+}
+
+.info-item {
+  padding: 0.1rem 1rem;
+  margin: 0.3rem;
+  color: #171219;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.4rem;
+}
+
+.info-item:first-of-type {
+  margin-bottom: 2rem;
+  min-height: 15vh;
+  font-size: 2rem;
+}
+
+.info-item span {
+  width: 32%;
+  min-height: 10vh;
+}
+
+.info-item:first-of-type span {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+@media only screen and (max-width: 350px) {
+  input {
+    width: 85%;
+  }
+  button,
+  select {
+    padding: 0.5rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 1064px) {
+  .info-item {
+    flex-direction: column;
+  }
+  .info-item span {
+    width: 100%;
+    min-height: 10vh;
+    margin: 1rem auto;
+  }
+
+  .info-item:first-of-type span {
+    flex-direction: column;
+  }
+}
+/* 
+@media only screen and (min-width: 350px) and (max-width: 1064px) {
+  .info-item {
+    flex-direction: column;
+  }
+  .info-item span {
+    width: 100%;
+    min-height: 10vh;
+    margin: 1rem auto;
+  }
+
+  .info-item:first-of-type span {
+    flex-direction: column;
+  }
+} */

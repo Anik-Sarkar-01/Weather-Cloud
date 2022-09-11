@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-Cloud</title>
+    <link rel="icon" href="img/fav-icon.png">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/weather.css" />
+  </head>
+  <body>
+    <div class="container">
+      {{>header}}
+      <form action="">
+        <input type="text" placeholder="Enter Location">
+        <button style="background-color: #3944F7;">Search</button>
+        {{!-- <label for="unit-choice"> Choose unit </label> --}}
+        <select style="background-color: #3944F7;" name="unit-choice" id="unit-choice">
+          <option value="">--Choose a system--</option>
+          <option value="m" selected="selected">Metric System</option>
+          <option value="s">Scientific System</option>
+          <option value="f">Fahrenheit System</option>
+        </select>
+      </form>
+
+      <div id="info-box"><div >
+        <img  style="border-radius: 10px; max-width: 35%; max-height: 50%;" src="img/13290.jpg" alt="">
+      </div>
+      </div>
+        
+      </div>
+    {{>footer}}
+    <script src="/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+/* Help Section */
+
+#help-container {
+    font-size: 1.5rem;
+    font-weight: 400;
+    background-color: #3944F7;
+    margin: 1rem;
+    padding: 1rem auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#help-container:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.help-para {
+    width: 90vw;
+    background-color: white;
+    margin: 1rem auto;
+    padding: 2rem 1rem;
+    text-align: left;
+    word-spacing: 0.1rem;
+    border-radius: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.help-para:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.help-item {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid lightgray;
+}
